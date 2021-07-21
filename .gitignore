@@ -1,0 +1,8 @@
+## User settings
+xcuserdata/
+
+# General
+.DS_Store
+
+# Thumbnails
+._*
