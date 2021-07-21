@@ -16,6 +16,7 @@
 		9F5422B026A8B0D7004696B1 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422AF26A8B0D7004696B1 /* CameraManager.swift */; };
 		9F5422B226A8B16F004696B1 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422B126A8B16F004696B1 /* FrameManager.swift */; };
 		9F5422B626A8B522004696B1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422B526A8B522004696B1 /* MainViewModel.swift */; };
+		9F5422B926A8B8C6004696B1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422B826A8B8C6004696B1 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9F5422AF26A8B0D7004696B1 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		9F5422B126A8B16F004696B1 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		9F5422B526A8B522004696B1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9F5422B826A8B8C6004696B1 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		9F5422B326A8B478004696B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F5422B726A8B8BA004696B1 /* Components */,
 				9F54229E26A8ADF2004696B1 /* MainView.swift */,
 			);
 			path = Views;
@@ -104,6 +107,14 @@
 				9F5422B526A8B522004696B1 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9F5422B726A8B8BA004696B1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9F5422B826A8B8C6004696B1 /* ErrorView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */,
 				9F5422B026A8B0D7004696B1 /* CameraManager.swift in Sources */,
+				9F5422B926A8B8C6004696B1 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
