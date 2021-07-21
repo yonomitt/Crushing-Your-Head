@@ -14,6 +14,7 @@
 		9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422AB26A8AFDB004696B1 /* CameraError.swift */; };
 		9F5422AE26A8B020004696B1 /* FrameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422AD26A8B020004696B1 /* FrameError.swift */; };
 		9F5422B026A8B0D7004696B1 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422AF26A8B0D7004696B1 /* CameraManager.swift */; };
+		9F5422B226A8B16F004696B1 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422B126A8B16F004696B1 /* FrameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9F5422AB26A8AFDB004696B1 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 		9F5422AD26A8B020004696B1 /* FrameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameError.swift; sourceTree = "<group>"; };
 		9F5422AF26A8B0D7004696B1 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		9F5422B126A8B16F004696B1 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				9F5422AB26A8AFDB004696B1 /* CameraError.swift */,
 				9F5422AF26A8B0D7004696B1 /* CameraManager.swift */,
 				9F5422AD26A8B020004696B1 /* FrameError.swift */,
+				9F5422B126A8B16F004696B1 /* FrameManager.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5422AE26A8B020004696B1 /* FrameError.swift in Sources */,
+				9F5422B226A8B16F004696B1 /* FrameManager.swift in Sources */,
 				9F54229F26A8ADF2004696B1 /* ContentView.swift in Sources */,
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */,
