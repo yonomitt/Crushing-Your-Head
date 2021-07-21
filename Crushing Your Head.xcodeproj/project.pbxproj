@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */; };
-		9F54229F26A8ADF2004696B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54229E26A8ADF2004696B1 /* ContentView.swift */; };
+		9F54229F26A8ADF2004696B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54229E26A8ADF2004696B1 /* MainView.swift */; };
 		9F5422A126A8ADF3004696B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5422A026A8ADF3004696B1 /* Assets.xcassets */; };
 		9F5422A426A8ADF3004696B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5422A326A8ADF3004696B1 /* Preview Assets.xcassets */; };
 		9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5422AB26A8AFDB004696B1 /* CameraError.swift */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		9F54229926A8ADF2004696B1 /* Crushing Your Head.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crushing Your Head.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushingYourHeadApp.swift; sourceTree = "<group>"; };
-		9F54229E26A8ADF2004696B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F54229E26A8ADF2004696B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9F5422A026A8ADF3004696B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F5422A326A8ADF3004696B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F5422AB26A8AFDB004696B1 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				9F5422AA26A8AFB5004696B1 /* Camera */,
+				9F5422B326A8B478004696B1 /* Views */,
 				9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */,
-				9F54229E26A8ADF2004696B1 /* ContentView.swift */,
 				9F5422A026A8ADF3004696B1 /* Assets.xcassets */,
 				9F5422A226A8ADF3004696B1 /* Preview Content */,
 			);
@@ -85,6 +85,14 @@
 				9F5422B126A8B16F004696B1 /* FrameManager.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		9F5422B326A8B478004696B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F54229E26A8ADF2004696B1 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +167,7 @@
 			files = (
 				9F5422AE26A8B020004696B1 /* FrameError.swift in Sources */,
 				9F5422B226A8B16F004696B1 /* FrameManager.swift in Sources */,
-				9F54229F26A8ADF2004696B1 /* ContentView.swift in Sources */,
+				9F54229F26A8ADF2004696B1 /* MainView.swift in Sources */,
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */,
 				9F5422B026A8B0D7004696B1 /* CameraManager.swift in Sources */,
