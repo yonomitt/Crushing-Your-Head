@@ -12,7 +12,8 @@ struct MainView: View {
 
     var body: some View {
         ZStack {
-            Color.black.edgesIgnoringSafeArea(.all)
+            FrameView(image: model.frame)
+                .edgesIgnoringSafeArea(.all)
 
             ErrorView(error: model.error)
         }
