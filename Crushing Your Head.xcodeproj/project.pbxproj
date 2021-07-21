@@ -33,7 +33,6 @@
 		9F5422B126A8B16F004696B1 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		9F5422B526A8B522004696B1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9F5422B826A8B8C6004696B1 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		9F5422BA26A8BA05004696B1 /* Crushing-Your-Head-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Crushing-Your-Head-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9F5422BB26A8BBE4004696B1 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		9F5422BE26A8BD7F004696B1 /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +72,6 @@
 				9F5422B426A8B511004696B1 /* ViewModels */,
 				9F5422B326A8B478004696B1 /* Views */,
 				9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */,
-				9F5422BA26A8BA05004696B1 /* Crushing-Your-Head-Info.plist */,
 				9F5422A026A8ADF3004696B1 /* Assets.xcassets */,
 				9F5422A226A8ADF3004696B1 /* Preview Content */,
 			);
@@ -346,7 +344,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Crushing-Your-Head-Info.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Since this game is AR-based, it needs access to the camera to function.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -378,7 +376,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Crushing-Your-Head-Info.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Since this game is AR-based, it needs access to the camera to function.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
