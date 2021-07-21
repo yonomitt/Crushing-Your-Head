@@ -22,6 +22,10 @@ class MainViewModel: ObservableObject {
     }
 
     private func setupSubscriptions() {
+        setupErrorHandling()
+    }
+
+    private func setupErrorHandling() {
         cameraManager.$error
             .receive(on: RunLoop.main)
             .sink { self.error = $0 }
