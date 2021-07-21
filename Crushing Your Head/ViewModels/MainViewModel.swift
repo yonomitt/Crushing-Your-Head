@@ -23,6 +23,14 @@ class MainViewModel: ObservableObject {
 
     private func setupSubscriptions() {
         setupErrorHandling()
+
+        frameManager.$current
+            .receive(on: RunLoop.main)
+            .compactMap { $0 }
+            .compactMap { buffer in
+                CGImage.create(from: buffer)
+            }
+            .assign(to: &$frame)
     }
 
     private func setupErrorHandling() {
