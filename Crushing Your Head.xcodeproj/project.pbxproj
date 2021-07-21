@@ -64,11 +64,11 @@
 		9F54229B26A8ADF2004696B1 /* Crushing Your Head */ = {
 			isa = PBXGroup;
 			children = (
-				9F5422BA26A8BA05004696B1 /* Crushing-Your-Head-Info.plist */,
 				9F5422AA26A8AFB5004696B1 /* Camera */,
 				9F5422B426A8B511004696B1 /* ViewModels */,
 				9F5422B326A8B478004696B1 /* Views */,
 				9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */,
+				9F5422BA26A8BA05004696B1 /* Crushing-Your-Head-Info.plist */,
 				9F5422A026A8ADF3004696B1 /* Assets.xcassets */,
 				9F5422A226A8ADF3004696B1 /* Preview Content */,
 			);
