@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject private var model = MainViewModel()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+
+            ErrorView(error: model.error)
+        }
     }
 }
 
