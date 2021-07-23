@@ -12,8 +12,18 @@ struct MainView: View {
 
     var body: some View {
         ZStack {
-            FrameView(image: model.frame)
-                .edgesIgnoringSafeArea(.all)
+            GeometryReader { geo in
+                ZStack {
+                    FrameView(image: model.frame)
+
+                    PinchView(pinch: model.pinch)
+                }
+                .frame(width: geo.size.width,
+                       height: geo.size.height,
+                       alignment: .center)
+                .clipped()
+            }
+            .edgesIgnoringSafeArea(.all)
 
             ErrorView(error: model.error)
         }

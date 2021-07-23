@@ -14,15 +14,9 @@ struct FrameView: View {
 
     var body: some View {
         if let image = image {
-            GeometryReader { geo in
-                Image(image, scale: 1.0, orientation: .up, label: label)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: geo.size.width,
-                           height: geo.size.height,
-                           alignment: .center)
-                    .clipped()
-            }
+            Image(image, scale: 1.0, orientation: .up, label: label)
+                .resizable()
+                .scaledToFill()
         } else {
             Color.black
         }
