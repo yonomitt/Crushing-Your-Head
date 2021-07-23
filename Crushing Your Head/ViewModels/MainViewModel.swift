@@ -11,6 +11,7 @@ import CoreImage
 class MainViewModel: ObservableObject {
     @Published var error: Error?
     @Published var frame: CGImage?
+    @Published var pinch: Pinch?
 
     private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
@@ -24,13 +25,27 @@ class MainViewModel: ObservableObject {
     private func setupSubscriptions() {
         setupErrorHandling()
 
-        frameManager.$current
+        let currFrame = frameManager.$current
             .receive(on: RunLoop.main)
             .compactMap { $0 }
+            .share()
+
+        currFrame
             .compactMap { buffer in
                 CGImage.create(from: buffer)
             }
             .assign(to: &$frame)
+
+        currFrame
+            .compactMap { buffer in
+                do {
+                    return try HandPoseDetector.shared.process(image: buffer)
+                } catch {
+                    self.error = error
+                    return nil
+                }
+            }
+            .assign(to: &$pinch)
     }
 
     private func setupErrorHandling() {
