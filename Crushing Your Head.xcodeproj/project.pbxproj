@@ -22,6 +22,7 @@
 		9F86D99B26AB4C6000A0B10C /* HandPoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D99A26AB4C6000A0B10C /* HandPoseDetector.swift */; };
 		9F86D99D26AB4CB800A0B10C /* VisionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D99C26AB4CB800A0B10C /* VisionProcessor.swift */; };
 		9F86D9A026AB4E0000A0B10C /* Pinch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D99F26AB4E0000A0B10C /* Pinch.swift */; };
+		9F86D9A226AB549900A0B10C /* PinchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A126AB549900A0B10C /* PinchView.swift */; };
 		9F86D9A426AB554E00A0B10C /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */; };
 		9F86D9A626AB55E700A0B10C /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		9F86D99A26AB4C6000A0B10C /* HandPoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetector.swift; sourceTree = "<group>"; };
 		9F86D99C26AB4CB800A0B10C /* VisionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionProcessor.swift; sourceTree = "<group>"; };
 		9F86D99F26AB4E0000A0B10C /* Pinch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinch.swift; sourceTree = "<group>"; };
+		9F86D9A126AB549900A0B10C /* PinchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchView.swift; sourceTree = "<group>"; };
 		9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 			children = (
 				9F5422B826A8B8C6004696B1 /* ErrorView.swift */,
 				9F5422BB26A8BBE4004696B1 /* FrameView.swift */,
+				9F86D9A126AB549900A0B10C /* PinchView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5422B626A8B522004696B1 /* MainViewModel.swift in Sources */,
+				9F86D9A226AB549900A0B10C /* PinchView.swift in Sources */,
 				9F86D9A426AB554E00A0B10C /* CGPointExtension.swift in Sources */,
 				9F5422BF26A8BD7F004696B1 /* CGImageExtension.swift in Sources */,
 				9F5422AE26A8B020004696B1 /* FrameError.swift in Sources */,
