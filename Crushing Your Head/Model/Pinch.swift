@@ -18,12 +18,18 @@ struct Pinch {
     }
 
     init?(from observation: VNHumanHandPoseObservation) {
-        guard let indexTip = try? observation.recognizedPoint(.indexTip).location,
-              let thumbTip = try? observation.recognizedPoint(.thumbTip).location else {
+        guard let indexTip = try? observation.recognizedPoint(.indexTip),
+              let thumbTip = try? observation.recognizedPoint(.thumbTip) else {
                   return nil
               }
-        self.top = indexTip
-        self.bottom = thumbTip
+
+        guard indexTip.confidence >= 0.8,
+              thumbTip.confidence >= 0.8 else {
+                  return nil
+              }
+
+        self.top = indexTip.location
+        self.bottom = thumbTip.location
     }
 }
 
