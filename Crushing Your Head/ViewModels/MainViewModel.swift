@@ -12,6 +12,7 @@ class MainViewModel: ObservableObject {
     @Published var error: Error?
     @Published var frame: CGImage?
     @Published var pinch: Pinch?
+    @Published var heads = [Head]()
 
     private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
@@ -46,6 +47,17 @@ class MainViewModel: ObservableObject {
                 }
             }
             .assign(to: &$pinch)
+
+        currFrame
+            .compactMap { buffer in
+                do {
+                    return try FaceDetector.shared.process(image: buffer)
+                } catch {
+                    self.error = error
+                    return nil
+                }
+            }
+            .assign(to: &$heads)
     }
 
     private func setupErrorHandling() {

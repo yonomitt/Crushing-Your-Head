@@ -16,6 +16,8 @@ struct MainView: View {
                 ZStack {
                     FrameView(image: model.frame)
 
+                    HeadView(heads: model.heads)
+
                     PinchView(pinch: model.pinch)
                 }
                 .frame(width: geo.size.width,
