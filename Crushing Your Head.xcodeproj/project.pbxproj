@@ -26,6 +26,7 @@
 		9F86D9A226AB549900A0B10C /* PinchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A126AB549900A0B10C /* PinchView.swift */; };
 		9F86D9A426AB554E00A0B10C /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */; };
 		9F86D9A626AB55E700A0B10C /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */; };
+		9FE34FE326B08FA000A7491E /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE34FE226B08FA000A7491E /* FaceDetector.swift */; };
 		9FE34FE526B0910600A7491E /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE34FE426B0910600A7491E /* Head.swift */; };
 		9FE34FE726B0922600A7491E /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE34FE626B0922600A7491E /* HeadView.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		9F86D9A126AB549900A0B10C /* PinchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchView.swift; sourceTree = "<group>"; };
 		9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		9FE34FE226B08FA000A7491E /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
 		9FE34FE426B0910600A7491E /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
 		9FE34FE626B0922600A7491E /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 		9F86D99926A9FE5400A0B10C /* Vision */ = {
 			isa = PBXGroup;
 			children = (
+				9FE34FE226B08FA000A7491E /* FaceDetector.swift */,
 				9F86D99A26AB4C6000A0B10C /* HandPoseDetector.swift */,
 				9F86D99C26AB4CB800A0B10C /* VisionProcessor.swift */,
 			);
@@ -260,6 +263,7 @@
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F86D99D26AB4CB800A0B10C /* VisionProcessor.swift in Sources */,
 				9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */,
+				9FE34FE326B08FA000A7491E /* FaceDetector.swift in Sources */,
 				9F5422B026A8B0D7004696B1 /* CameraManager.swift in Sources */,
 				9F5422B926A8B8C6004696B1 /* ErrorView.swift in Sources */,
 				9F86D9A026AB4E0000A0B10C /* Pinch.swift in Sources */,
