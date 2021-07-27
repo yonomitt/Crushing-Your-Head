@@ -26,6 +26,8 @@
 		9F86D9A226AB549900A0B10C /* PinchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A126AB549900A0B10C /* PinchView.swift */; };
 		9F86D9A426AB554E00A0B10C /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */; };
 		9F86D9A626AB55E700A0B10C /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */; };
+		9FE34FE526B0910600A7491E /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE34FE426B0910600A7491E /* Head.swift */; };
+		9FE34FE726B0922600A7491E /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE34FE626B0922600A7491E /* HeadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		9F86D9A126AB549900A0B10C /* PinchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchView.swift; sourceTree = "<group>"; };
 		9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		9FE34FE426B0910600A7491E /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		9FE34FE626B0922600A7491E /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			children = (
 				9F5422B826A8B8C6004696B1 /* ErrorView.swift */,
 				9F5422BB26A8BBE4004696B1 /* FrameView.swift */,
+				9FE34FE626B0922600A7491E /* HeadView.swift */,
 				9F86D9A126AB549900A0B10C /* PinchView.swift */,
 			);
 			path = Components;
@@ -163,6 +168,7 @@
 		9F86D99E26AB4DD300A0B10C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9FE34FE426B0910600A7491E /* Head.swift */,
 				9F86D99F26AB4E0000A0B10C /* Pinch.swift */,
 			);
 			path = Model;
@@ -246,8 +252,10 @@
 				9F5422AE26A8B020004696B1 /* FrameError.swift in Sources */,
 				9F86D9A626AB55E700A0B10C /* CGRectExtension.swift in Sources */,
 				9F86D99B26AB4C6000A0B10C /* HandPoseDetector.swift in Sources */,
+				9FE34FE726B0922600A7491E /* HeadView.swift in Sources */,
 				9F5422B226A8B16F004696B1 /* FrameManager.swift in Sources */,
 				9F5422BC26A8BBE4004696B1 /* FrameView.swift in Sources */,
+				9FE34FE526B0910600A7491E /* Head.swift in Sources */,
 				9F54229F26A8ADF2004696B1 /* MainView.swift in Sources */,
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F86D99D26AB4CB800A0B10C /* VisionProcessor.swift in Sources */,
