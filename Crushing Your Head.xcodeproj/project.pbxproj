@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F3750E926B09AC8004EFF5F /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3750E826B09AC8004EFF5F /* CGSizeExtension.swift */; };
+		9F3750EB26B0A09A004EFF5F /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3750EA26B0A09A004EFF5F /* PublisherExtension.swift */; };
 		9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */; };
 		9F54229F26A8ADF2004696B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54229E26A8ADF2004696B1 /* MainView.swift */; };
 		9F5422A126A8ADF3004696B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5422A026A8ADF3004696B1 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		9F3750E826B09AC8004EFF5F /* CGSizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
+		9F3750EA26B0A09A004EFF5F /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		9F54229926A8ADF2004696B1 /* Crushing Your Head.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crushing Your Head.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F54229C26A8ADF2004696B1 /* CrushingYourHeadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushingYourHeadApp.swift; sourceTree = "<group>"; };
 		9F54229E26A8ADF2004696B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				9F86D9A326AB554E00A0B10C /* CGPointExtension.swift */,
 				9F86D9A526AB55E700A0B10C /* CGRectExtension.swift */,
 				9F3750E826B09AC8004EFF5F /* CGSizeExtension.swift */,
+				9F3750EA26B0A09A004EFF5F /* PublisherExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				9F5422BC26A8BBE4004696B1 /* FrameView.swift in Sources */,
 				9FE34FE526B0910600A7491E /* Head.swift in Sources */,
 				9F54229F26A8ADF2004696B1 /* MainView.swift in Sources */,
+				9F3750EB26B0A09A004EFF5F /* PublisherExtension.swift in Sources */,
 				9F54229D26A8ADF2004696B1 /* CrushingYourHeadApp.swift in Sources */,
 				9F86D99D26AB4CB800A0B10C /* VisionProcessor.swift in Sources */,
 				9F5422AC26A8AFDB004696B1 /* CameraError.swift in Sources */,
