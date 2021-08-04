@@ -38,6 +38,7 @@ class MainViewModel: ObservableObject {
             .assign(to: &$frame)
 
         currFrame
+            .sample(every: 2)
             .compactMap { buffer in
                 do {
                     return try HandPoseDetector.shared.process(image: buffer)
@@ -49,6 +50,7 @@ class MainViewModel: ObservableObject {
             .assign(to: &$pinch)
 
         currFrame
+            .sample(every: 2)
             .compactMap { buffer in
                 do {
                     return try FaceDetector.shared.process(image: buffer)
