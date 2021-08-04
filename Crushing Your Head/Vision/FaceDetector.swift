@@ -14,6 +14,7 @@ class FaceDetector: VisionProcessor {
 
     private lazy var request: VNRequest = {
         let req = VNDetectFaceRectanglesRequest()
+        req.regionOfInterest = CGRect(x: 0.2, y: 0.5, width: 0.6, height: 0.3)
         return req
     }()
 
