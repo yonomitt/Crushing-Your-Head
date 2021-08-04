@@ -27,6 +27,8 @@ struct MainView: View {
             }
             .edgesIgnoringSafeArea(.all)
 
+            HUDView(score: model.score)
+            
             ErrorView(error: model.error)
         }
     }

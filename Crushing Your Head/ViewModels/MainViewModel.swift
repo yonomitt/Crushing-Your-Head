@@ -13,6 +13,7 @@ class MainViewModel: ObservableObject {
     @Published var frame: CGImage?
     @Published var pinch: Pinch?
     @Published var heads = [Head]()
+    @Published var score = 0
 
     private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
