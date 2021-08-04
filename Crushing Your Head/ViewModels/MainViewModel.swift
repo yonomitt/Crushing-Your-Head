@@ -61,6 +61,19 @@ class MainViewModel: ObservableObject {
                 }
             }
             .assign(to: &$heads)
+
+        $pinch
+            .nwise(2)
+            .zip($heads)
+            .sink { pinches, _ in
+                guard let first = pinches[0],
+                      let second = pinches[1],
+                      first.isOpen && second.isClosed else {
+                          return
+                      }
+                self.score += 100
+            }
+            .store(in: &subscriptions)
     }
 
     private func setupErrorHandling() {
