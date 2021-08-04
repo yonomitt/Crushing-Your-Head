@@ -12,6 +12,14 @@ struct Pinch {
     let top: CGPoint
     let bottom: CGPoint
 
+    var isClosed: Bool {
+        abs(top.y - bottom.y) <= 0.03
+    }
+
+    var isOpen: Bool {
+        !isClosed
+    }
+
     private init(top: CGPoint, bottom: CGPoint) {
         self.top = top
         self.bottom = bottom
