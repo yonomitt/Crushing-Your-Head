@@ -65,14 +65,19 @@ class MainViewModel: ObservableObject {
         $pinch
             .nwise(2)
             .zip($heads)
-            .sink { pinches, _ in
+            .sink { pinches, heads in
                 guard let first = pinches[0],
                       let second = pinches[1],
                       first.isOpen && second.isClosed else {
                           return
                       }
 
-                self.score += 100
+                for head in heads {
+                    if head.bbox.contains(second.center) {
+                        self.score += 100
+                        break
+                    }
+                }
             }
             .store(in: &subscriptions)
     }
