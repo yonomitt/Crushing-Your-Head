@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PinchView: View {
     var pinch: Pinch?
-    let pointSize: CGFloat = 6
+    let pointSize: CGFloat = 20
 
     var body: some View {
         GeometryReader { geo in
