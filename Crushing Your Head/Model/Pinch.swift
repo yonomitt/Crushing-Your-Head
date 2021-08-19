@@ -20,6 +20,10 @@ struct Pinch {
         !isClosed
     }
 
+    var center: CGPoint {
+        (top + bottom) / 2
+    }
+
     private init(top: CGPoint, bottom: CGPoint) {
         self.top = top
         self.bottom = bottom
