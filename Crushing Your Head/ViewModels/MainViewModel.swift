@@ -71,6 +71,7 @@ class MainViewModel: ObservableObject {
                       first.isOpen && second.isClosed else {
                           return
                       }
+
                 self.score += 100
             }
             .store(in: &subscriptions)
