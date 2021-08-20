@@ -77,7 +77,7 @@ class MainViewModel: ObservableObject {
                 let uncrushedHeads = heads.filter { !self.crushedHeads.contains($0.id) }
 
                 for head in uncrushedHeads {
-                    if head.bbox.contains(second.center) {
+                    if head.bbox.contains(first.center) {
                         self.crushedHeads.insert(head.id)
                         self.score += 100
                         break
