@@ -15,6 +15,8 @@ class MainViewModel: ObservableObject {
     @Published var heads = [Head]()
     @Published var score = 0
 
+    private var crushedHeads = Set<UUID>()
+
     private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
 
@@ -72,8 +74,11 @@ class MainViewModel: ObservableObject {
                           return
                       }
 
-                for head in heads {
+                let uncrushedHeads = heads.filter { !self.crushedHeads.contains($0.id) }
+
+                for head in uncrushedHeads {
                     if head.bbox.contains(second.center) {
+                        self.crushedHeads.insert(head.id)
                         self.score += 100
                         break
                     }
