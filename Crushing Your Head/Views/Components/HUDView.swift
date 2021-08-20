@@ -12,20 +12,18 @@ struct HUDView: View {
     var body: some View {
         VStack {
             HStack {
+                Text("SCORE:")
+                    .font(.system(size: 100, weight: .semibold))
+
                 Spacer()
-
-                HStack {
-                    Text("SCORE:")
-                        .fontWeight(.bold)
-
-                    Text("\(score)")
-                        .fontWeight(.bold)
-                        .frame(width: 75, alignment: .trailing)
-                }
-                .foregroundColor(.white)
-                .shadow(color: .black.opacity(0.7), radius: 2, x: 0, y: 0)
-                .padding(.horizontal)
+                
+                Text("\(score)")
+                    .font(.system(size: 100, weight: .semibold))
+                    .frame(width: 200, alignment: .trailing)
             }
+            .foregroundColor(.white)
+            .shadow(color: .black.opacity(0.7), radius: 2, x: 0, y: 0)
+            .padding(.horizontal, 50)
 
             Spacer()
         }
