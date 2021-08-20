@@ -10,20 +10,35 @@ import Vision
 class FaceDetector: VisionProcessor {
     static let shared = FaceDetector()
 
+    private var sequenceHandler = VNSequenceRequestHandler()
+
+    private var trackedHeads = [UUID: VNDetectedObjectObservation]()
+
+    private let minimumConfidence: Float = 0.75
+
     private init() {}
 
-    private lazy var request: VNRequest = {
+    private lazy var detectionRequest: VNRequest = {
         let req = VNDetectFaceRectanglesRequest()
         req.regionOfInterest = CGRect(x: 0.2, y: 0.5, width: 0.6, height: 0.3)
         return req
     }()
 
-    private func postProcess(request: VNRequest) -> [Head] {
-        guard let results = request.results as? [VNFaceObservation] else {
-            return []
+    private func postProcess(requests: [VNRequest]) -> [Head] {
+        var newTrackedHeads = [UUID: VNDetectedObjectObservation]()
+        for request in requests {
+            guard let results = request.results as? [VNDetectedObjectObservation] else {
+                continue
+            }
+
+            for result in results where result.confidence >= minimumConfidence {
+                newTrackedHeads[result.uuid] = result
+            }
         }
 
-        return results.map { Head(id: $0.uuid, bbox: $0.boundingBox) }
+        trackedHeads = newTrackedHeads
+
+        return trackedHeads.values.map { Head(id: $0.uuid, bbox: $0.boundingBox) }
     }
 
     func process(image: CVPixelBuffer?) throws -> [Head] {
@@ -31,8 +46,19 @@ class FaceDetector: VisionProcessor {
             return []
         }
 
-        let faceDetectRequest = try perform(request, on: image)
+        var requests = [VNRequest]()
 
-        return postProcess(request: faceDetectRequest)
+        for head in trackedHeads {
+            requests.append(VNTrackObjectRequest(detectedObjectObservation: head.value))
+        }
+
+        if requests.isEmpty {
+            requests.append(detectionRequest)
+            sequenceHandler = VNSequenceRequestHandler()
+        }
+
+        try sequenceHandler.perform(requests, on: image)
+
+        return postProcess(requests: requests)
     }
 }
