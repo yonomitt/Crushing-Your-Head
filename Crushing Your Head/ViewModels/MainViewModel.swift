@@ -56,7 +56,8 @@ class MainViewModel: ObservableObject {
             .sample(every: 2)
             .compactMap { buffer in
                 do {
-                    return try FaceDetector.shared.process(image: buffer)
+                    let objects = try FaceDetector.shared.process(image: buffer)
+                    return objects.map { Head(detectedObject: $0, crushed: self.crushedHeads.contains($0.id)) }
                 } catch {
                     self.error = error
                     return nil

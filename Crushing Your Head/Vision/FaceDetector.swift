@@ -24,7 +24,7 @@ class FaceDetector: VisionProcessor {
         return req
     }()
 
-    private func postProcess(requests: [VNRequest]) -> [Head] {
+    private func postProcess(requests: [VNRequest]) -> [DetectedObject] {
         var newTrackedHeads = [UUID: VNDetectedObjectObservation]()
         for request in requests {
             guard let results = request.results as? [VNDetectedObjectObservation] else {
@@ -38,10 +38,10 @@ class FaceDetector: VisionProcessor {
 
         trackedHeads = newTrackedHeads
 
-        return trackedHeads.values.map { Head(id: $0.uuid, bbox: $0.boundingBox) }
+        return trackedHeads.values.map { DetectedObject(id: $0.uuid, bbox: $0.boundingBox) }
     }
 
-    func process(image: CVPixelBuffer?) throws -> [Head] {
+    func process(image: CVPixelBuffer?) throws -> [DetectedObject] {
         guard let image = image else {
             return []
         }
