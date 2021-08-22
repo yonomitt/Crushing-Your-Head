@@ -8,6 +8,7 @@
 import CoreImage
 import Vision
 
+/// Helpful protocol to conform Vision-based processors/detectors
 protocol VisionProcessor {
     func perform(_ request: VNRequest, on image: CVPixelBuffer) throws -> VNRequest
 }

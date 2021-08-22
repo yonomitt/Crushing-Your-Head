@@ -28,6 +28,7 @@ extension CGPoint {
         lhs + CGPoint(x: -rhs.x, y: -rhs.y)
     }
 
+    /// Mirror a unit point about the x-axis
     var mirrorY: CGPoint {
         CGPoint(x: x, y: 1.0 - y)
     }

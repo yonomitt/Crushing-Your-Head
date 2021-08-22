@@ -12,6 +12,7 @@ extension CGSize {
         CGSize(width: lhs.width * rhs.width, height: lhs.height * rhs.height)
     }
 
+    /// Mirror a unit size about the x-axis
     var mirrorY: CGSize {
         CGSize(width: width, height: 1.0 - height)
     }

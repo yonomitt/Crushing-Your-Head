@@ -8,6 +8,8 @@
 import CoreGraphics
 import Vision
 
+/// A structure representing the index finger tip and thumb tip of a hand... or a pinch
+/// The pinch is based on a unit rect, so the points are within the range [0.0, 1.0]
 struct Pinch {
     let top: CGPoint
     let bottom: CGPoint

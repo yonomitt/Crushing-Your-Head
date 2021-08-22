@@ -24,12 +24,16 @@ class FrameManager: NSObject, ObservableObject {
         CameraManager.shared.set(self, queue: videoOutputQueue)
     }
 
+    /// Sets the published error on the main thread as required by `@Published` properties
+    /// - Parameter error: a error in the frame manager
     private func set(error: FrameError?) {
         DispatchQueue.main.async {
             self.error = error
         }
     }
 }
+
+// MARK: - AVCaptureVideoDataOutputSampleBufferDelegate methods
 
 extension FrameManager: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput,

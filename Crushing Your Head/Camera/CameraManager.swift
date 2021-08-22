@@ -35,6 +35,7 @@ class CameraManager: ObservableObject {
         }
     }
 
+    /// Checks camera permissions and requests them if necessary
     private func checkPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .notDetermined:
@@ -60,6 +61,7 @@ class CameraManager: ObservableObject {
         }
     }
 
+    /// Configures the `AVCaptureSession`
     private func configureCaptureSession() {
         if status == .unauthorized {
             return
@@ -121,6 +123,10 @@ class CameraManager: ObservableObject {
         }
     }
 
+    /// Sets the delegate that should receive the video sample buffers
+    /// - Parameters:
+    ///   - delegate: object that will receive camera data
+    ///   - queue: the queue, on which the callbacks should be invoked
     func set(_ delegate: AVCaptureVideoDataOutputSampleBufferDelegate,
              queue: DispatchQueue) {
         videoOutput.setSampleBufferDelegate(delegate, queue: queue)
