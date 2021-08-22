@@ -17,7 +17,7 @@ struct HeadView: View {
                     Path { path in
                         path.addRect(rect(for: head.bbox, within: geo.frame(in: .local)))
                     }
-                    .stroke(Color.yellow, lineWidth: 6)
+                    .stroke(head.crushed ? Color.yellow : .green, lineWidth: 6)
                 }
             }
         }
